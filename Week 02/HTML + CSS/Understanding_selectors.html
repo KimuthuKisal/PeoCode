@@ -7,25 +7,150 @@
     <title>Document</title>
 
     <style>
-        body{
-            /* background-color: rgb(253,247,219); */
+        header{
+            margin: 0rem;
+            padding-top: 10px;
             background-image: linear-gradient(rgb(255,147,58), rgb(253,247,219));
+        }
+
+        body{
             text-align: center;
+            font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(253,247,219);
+        }
+
+        div, table{
+            margin: 1rem;
+            border-radius: 16px;
+        }
+
+        .left-align{
+            text-align: left;
+            float: left;
+        }
+
+        .right-align{
+            float: right;
+            text-align: right;
+        }
+
+        table, th, td {
+            color: white;
+            font-size: 10px;
+            text-align: left;
+            padding-left: 2px;
+
+        }
+
+        table{
+            background-image: linear-gradient(-68deg, #ac32e4, #4801ff);
+            border-width: 2px;
+        }
+
+        th {
+            width: 8%;
+            text-align: center;
+            color: rgb(211, 184, 235);
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+
+        h3{
+            color: white;
+        }
+
+        h2{
+            line-height: 0%;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Understanding Selectors</h1>
-        <h2>PeoCode - Week 2</h2>
 
-        <div>
-            <p class="left-align"><strong>Kimuthu Kisal</strong></p>
-            <p class="right-align"><em>20000804</em></p>
-            <div style="clear: both;"></div>
-        </div>
+    <body>
+
+        <header style="margin: -1rem;">
+            <h1 style="text-transform: uppercase;"><em>Understanding Selectors</em></h1>
+            <h2>PeoCode - Week 2</h2>
+            <div>
+                <p class="left-align"><strong>&lt;Kimuthu Kisal&gt;</strong></p>
+                <p class="right-align"><em>&lt;20000804&gt;</em></p>
+                <div style="clear: both;"></div>
+            </div>
+        </header>
+
+        <div style="margin: 50px; background-color: #402585; border: 2px solid  #8b6ed6; box-shadow: 6px 6px 18px black;">
+            <h3>Student Details - UCSC 1<sup>st</sup> year batch</sup></h3>
+            
+            <table>
+
+                <tr>
+                    <th colspan="2">Index Numbers</th>
+                    <th colspan="2">Name</th>
+                    <th rowspan="2">Course</th>
+                    <th rowspan="2">Hometown</th>
+                    <th rowspan="2">Contact Number</th>
+                </tr>
+                <tr>
+                    <th>Temporary</th>
+                    <th>Real</th>
+                    <th>First</th>
+                    <th>Last</th>
+                </tr>
         
-    </header>
-    
-</body>
+                <tr>
+                    <td>201024</td>
+                    <td style="color: yellow;"><b>20000456</b></td>
+                    <td>Hasitha</td>
+                    <td>Sandaruwan</td>
+                    <td>IS</td>
+                    <td>Kuruneagala</td>
+                    <td>0713561980</td>
+                </tr>
+        
+                <tr>
+                    <td>201078</td>
+                    <td style="color: yellow;"><b>20001224</b></td>
+                    <td>Dilruwan</td>
+                    <td>Bandara</td>
+                    <td>CS</td>
+                    <td>Anuradhapura</td>
+                    <td>0772495871</td>
+                </tr>
+        
+                <tr>
+                    <td>201067</td>
+                    <td style="color: yellow;"><b>20000345</b></td>
+                    <td>Kaushalya</td>
+                    <td>Mannapperuma</td>
+                    <td>CS</td>
+                    <td>Horana</td>
+                    <td>0724516942</td>
+                </tr>
+        
+                <tr>
+                    <td>201084</td>
+                    <td style="color: yellow;"><b>20000678</b></td>
+                    <td>Sanduni</td>
+                    <td>Weerasinghe</td>
+                    <td>IS</td>
+                    <td>Palmadulla</td>
+                    <td>0757856431</td>
+                </tr>
+        
+                <tr>
+                    <td>201089</td>
+                    <td style="color: yellow;"><b>20000554</b></td>
+                    <td>Thiwanka</td>
+                    <td>Balasooriya</td>
+                    <td>IS</td>
+                    <td>Unawatuna</td>
+                    <td>0764578936</td>
+                </tr>
+        
+                <tr><td style="text-align: left; color: rgb(166, 172, 255);" colspan="7"> <i> <b>NB</b>: All the details that come up to here aer not real.</i> </td></tr>
+        
+            </table>
+
+        </div>
+    </body>
+
 </html>
